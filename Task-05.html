@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .profile-img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .profile-img img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .designation {
+            color: #666;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .bio {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .social-icons li {
+            margin: 0 10px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="profile-img">
+            <img src="Profile_image.png" alt="Profile Picture">
+        </div>
+        <div class="card-content">
+            <div class="name">Chaitanya Waghmare</div>
+            <div class="designation">Java Developer</div>
+            <p class="bio">I am a passionate Java developer with expertise in front-end and Backend technologies and a love for coding.</p>
+            <ul class="social-icons">
+              <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
